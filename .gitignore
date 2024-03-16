@@ -1,0 +1,13 @@
+# 무시할 폴더
+# query/.metadata/
+# query/General/
+# query/drivers/
+pythonProject/.idea/
+pythonProject/.venv/
+
+# 무시할 파일 형식
+*.log
+*.tmp
+*.jar
+*.pom
+*.xml
