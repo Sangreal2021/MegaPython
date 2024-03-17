@@ -10,8 +10,11 @@ money = 120 # 투자원금
 year = 5 # 투자기간
 amt = money * ((1.0 + 0.06) ** year)
 
-print(year, '년 후의 원리금은 ', amt, sep='')
+# print(year, '년 후의 원리금은 ', amt, sep='')
 print(f'''
+투자원금 = {money}원
+투자기간 = {year}년
+{year}년 후의 원리금은 {amt}
 ''')
 
 
