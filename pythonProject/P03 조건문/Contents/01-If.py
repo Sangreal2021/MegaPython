@@ -16,9 +16,9 @@ if num > 0: # if 조건식:
     print('num은 양수입니다.')
 print('조건문 끝나고 실행하는 문장')
 
-num1 = 0
+num1 = float(input('숫자를 입력하세요 >>> '))
 if num1 > 0:
-    print('TRUE')
+    print('PLUS')
 elif num1 == 0:
     print('Zer0')
 else:
