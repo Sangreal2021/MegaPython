@@ -16,17 +16,17 @@ print(50 - 30)
 print(10 * 50)
 print()
 
-print(3 / 2)
-print(14 % 3)
-print(11 % 3.5)
+print('3 / 2 =', 3 / 2)
+print('14 % 3 =', 14 % 3)
+print('11 % 3.5 =', 11 % 3.5)
 print()
 
-print(3 // 2)
-print(4 ** 3)
+print('3 // 2 =', 3 // 2)
+print('4 ** 3 =', 4 ** 3)
 
-print(5 / 4)
-print(4 / 2)
-print(4 // 2)
+print('5 / 4 =', 5 / 4)
+print('4 / 2 =', 4 / 2)
+print('4 // 2 =', 4 // 2)
 
 
 

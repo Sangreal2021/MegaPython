@@ -12,6 +12,7 @@ num1 = int(input('정수를 입력하시오: '))
 num2 = int(input('정수를 입력하시오: '))
 num3 = int(input('정수를 입력하시오: '))
 avg = int( (num1+num2+num3) / 3 )
-# print(f'''평균은 {avg}입니다.
+print('\n', '평균은 ', avg, '입니다.', sep='')
+# print(f'''
+# 평균은 {avg}입니다.
 # ''')
-print('평균은 ', avg, '입니다.', sep='')

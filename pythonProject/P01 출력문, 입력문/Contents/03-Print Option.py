@@ -7,7 +7,7 @@ print(2, 0, 2, 4, sep='|')
 print(2, 0, 2, 4, sep='')
 
 print('2024', '03', '16', sep='-')
-print('시험 난이도: TOEFL ', ' TOEIC', sep='>>>')
+print('시험 난이도: TOEFL', ' TOEIC', sep=' >>>')
 print('123 + 456', 123+456, sep=' = ')
 print()
 

@@ -10,7 +10,7 @@ Q) 원의 반지름을 입력 받아서, 원의 넓이를 계산
 pi = 3.14
 radi = int(input('반지름을 입력하시오: '))
 area = radi ** 2 * pi
-print('반지름이 ', radi, '인 원의 넓이는 ', area, '입니다.', sep='')
-# print(f'''반지름이 {radi}인 원의 넓이는 {area}입니다.
-# ''')
+# print('반지름이 ', radi, '인 원의 넓이는 ', area, '입니다.', sep='')
+print(f'''반지름이 {radi}인 원의 넓이는 {area}입니다.
+''')
 

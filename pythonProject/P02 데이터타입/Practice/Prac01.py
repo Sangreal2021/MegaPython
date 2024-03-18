@@ -1,5 +1,5 @@
 '''
-Q) 다음 두 실수가 줘졌을 때
+Q) 다음 두 실수가 주어 졌을 때
 두 수 끼리 더하기
 - 실행화면 -
 num1 + num2 = 10.0
@@ -10,29 +10,43 @@ num1 % num2 = 1.0
 num1 // num2 = 2.0
 num1 ** num2 = 343.0
 '''
-num1 = 7
+
+num1 = 7.0
 num2 = 3.0
 
-sum = num1 + num2
-print('num1 + num2 =', sum)
+print(f'''
+num1 + num2 = {num1+num2}
+num1 - num2 = {num1-num2}
+num1 * num2 = {num1*num2}
+num1 / num2 = {num1/num2}
+num1 % num2 = {num1%num2}
+num1 // num2 = {num1//num2}
+num1 ** num2 = {num1**num2}
+''')
 
-sum = num1 - num2
-print('num1 - num2 =', sum)
-
-sum = num1 * num2
-print('num1 * num2 =', sum)
-
-sum = num1 / num2
-print('num1 / num2 =', sum)
-
-sum = num1 % num2
-print('num1 % num2 =', sum)
-
-sum = num1 // num2
-print('num1 // num2 =', sum)
-
-sum = num1 ** num2
-print('num1 ** num2 =', sum)
+# num1 = 7
+# num2 = 3.0
+#
+# sum = num1 + num2
+# print('num1 + num2 =', sum)
+#
+# sum = num1 - num2
+# print('num1 - num2 =', sum)
+#
+# sum = num1 * num2
+# print('num1 * num2 =', sum)
+#
+# sum = num1 / num2
+# print('num1 / num2 =', sum)
+#
+# sum = num1 % num2
+# print('num1 % num2 =', sum)
+#
+# sum = num1 // num2
+# print('num1 // num2 =', sum)
+#
+# sum = num1 ** num2
+# print('num1 ** num2 =', sum)
 
 
 
