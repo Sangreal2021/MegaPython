@@ -18,11 +18,13 @@ print('조건문 끝나고 실행하는 문장')
 
 num1 = float(input('숫자를 입력하세요 >>> '))
 if num1 > 0:
-    print('PLUS')
+    print('입력값 : ', num1, '"PLUS"')
 elif num1 == 0:
-    print('Zer0')
+    print('입력값 : ', num1, '"Zer0"')
+elif num1 < 0:
+    print('입력값 : ', num1, '"MINUS"')
 else:
-    print('MINUS')
+    print('입력 형식이 잘못되었습니다.')
 
 
 
