@@ -14,8 +14,8 @@ Q)  구구단 3단을 출력하라.
 '''
 # 구구단 3단 출력
 for i in range(1, 10):
-    # print(f'3 x {i} = {3 * i}')
-    print('3 x', i, '=', 3*i)
+    print(f'{3} x {i} = {3 * i}')
+    # print('3 x', i, '=', 3*i)
 print()
 print('#' * 15)
 
@@ -23,7 +23,7 @@ print('#' * 15)
 for i in range(2, 10):
     print(f'<{i} 단>')
     for j in range(1, 10):
-        print(f'{i} x {j} = {i*j}')
+        print(f'{i} x {j} = {i * j}')
     print('')
 
 
