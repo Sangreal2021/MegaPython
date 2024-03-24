@@ -11,7 +11,8 @@ Q)  숫자 하나를 입력해서 팩토리얼 값을 구하라.(*=)
 
 num1 = int(input('팩토리얼 입력: '))
 fac = 1 # 0으로 초기화시 곱연산이기 때문에 계속 0이 됨
-for i in range(num1, 1, -1):
+# for i in range(1, num1+1):
+for i in range(num1, 0, -1):
     fac *= i
 print(f'{num1}! = {fac}')
 
