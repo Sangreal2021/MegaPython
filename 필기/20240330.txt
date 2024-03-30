@@ -1,0 +1,9 @@
+[day05]
+
+알고리즘 트레이닝 사이트
+1. 백준
+	https://www.acmicpc.net/
+2. 프로그래머스
+	https://programmers.co.kr/
+3. 코드업
+	https://codeup.kr/
