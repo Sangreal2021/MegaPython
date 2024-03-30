@@ -1,3 +1,3 @@
-print('안녕하세요')
-print('첫날입니다')
-
+for i in range(3, -3, -1):
+    num = 10/i
+    print(num)

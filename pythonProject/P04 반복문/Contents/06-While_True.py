@@ -11,6 +11,11 @@
 # break 키워드
 반복문을 빠져나옴. 탈출(exit)
 조건문과 함께 사용
+
+# continue 키워드
+반복문 처음으로 돌아감
+continue 다음줄 부터의 실행문은 스킵
+
 '''
 
 # 1~5 반복
@@ -43,14 +48,25 @@ print('-'*25)
 #         break
 # print('-'*25)
 
-# 숫자 -1을 입력하면 무한반복 종료
-while True:
-    # num = int(input('숫자 입력(종료는 -1) : '))
-    num = input('숫자 입력(종료는 -1) : ')
-    if num == '-1':
-        print('프로그램을 종료합니다.')
-        break
 
+# 숫자 -1을 입력하면 무한반복 종료
+# while True:
+#     # num = int(input('숫자 입력(종료는 -1) : '))
+#     num = input('숫자 입력(종료는 -1) : ')
+#     if num == '-1':
+#         print('프로그램을 종료합니다.')
+#         break
+# print('-'*15)
+
+
+# continue 문 사용
+# 1~20 사이 5의 배수를 제외하고 출력
+i = 0
+while i < 20:
+    i += 1
+    if i%5 == 0:
+        continue
+    print(i, end=' ')
 
 
 
