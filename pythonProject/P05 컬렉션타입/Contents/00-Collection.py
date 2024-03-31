@@ -7,26 +7,10 @@
 
 listA = [10, 20, 30, 20, 10]
 tupB = (10, 20, 30, 20, 10)
-dictC = {'a':10, 'b':20, 'c':30}
+dictC = {'a': 10, 'b': 20, 'c': 30}
 setD = {10, 20, 30, 20, 10}
 
 print('listA =', listA)
 print('tupB =', tupB)
 print('dictC =', dictC)
-print('setD =', setD) # 집합은 중복값 제거
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+print('setD =', setD)  # 집합은 중복값 제거

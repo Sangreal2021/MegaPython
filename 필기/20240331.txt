@@ -1,4 +1,10 @@
 [day06]
 
+1. python 온라인 실행 프로그램
+	(1) GDB 온라인
+		https://www.onlinegdb.com/
+	
+	(2) 구글 코랩 (로그인 필요)
+		https://colab.research.google.com/?hl=ko
 
-
+	(3) 

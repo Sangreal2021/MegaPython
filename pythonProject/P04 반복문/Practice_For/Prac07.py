@@ -63,7 +63,7 @@ for i in range(1, 6):
 print()
 
 
-# Q2)
+# Q2) 위의 좌우반전
 for i in range(1, 6):
     print((' ' * (5-i)) + ('*' * i))
 print()
