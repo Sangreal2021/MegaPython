@@ -97,6 +97,19 @@ f.remove(1) # 해당 값을 삭제 (중복시 맨 앞에 하나 삭제)
 print(f)
 f.remove('3월')
 print(f)
+print('='*40)
+
+# 비어있는 리스트 만들기
+k = []
+print(k, type(k))
+k.append(10)
+print(k)
+
+k = list()
+print(k, type(k))
+k.append(20)
+print(k)
+
 
 
 
