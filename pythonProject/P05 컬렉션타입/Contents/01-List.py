@@ -109,32 +109,55 @@ k = list()
 print(k, type(k))
 k.append(20)
 print(k)
+print('='*40)
+###################################################
+# == 리스트 관련 함수 == #
+nums = [10, 30, 20, 5, 25]
+alp = ['a', 'c', 'f', 'b']
 
+# 찾으려는 데이터 인덱스 반환
+print(nums.index(20))
+print(alp.index('c'))
 
+# 오름차순 정렬
+nums.sort()
+print(nums)
+alp.sort()
+print(alp)
 
+# 내림차순 정렬
+nums.sort(reverse=True)
+print(nums)
+alp.sort(reverse=True)
+print(alp)
 
+# 리스트 확장 (+ 연산과 append 기능 복합)
+nums.extend([0, -5, -10])
+print(nums)
+nums.extend(alp)
+print(nums)
 
+# 역순으로 정렬 (오름/내림 차순이 아니고 그대로 뒤집기)
+nums.reverse()
+print(nums)
 
+# 데이터 비우기
+nums.clear()
+print(nums)
+print('='*40)
 
+# 복합대입연산자 사용
+a = [1,2,3]
+a += [4,5]  # 더할때 튜플()로 더해도 됨. 집합{} 도 가능
+print(a)
+a *= 2
+print(a)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+b = '아메'
+b += '리카노'
+print(b)
+b = b.replace('메', '아')
+print(b)
 
 
 

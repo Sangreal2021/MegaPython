@@ -16,6 +16,7 @@ Q)   다음 리스트에서 찾고자 하는 데이터를 입력 받아
 k = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
 n = int(input('찾을 데이터 입력: '))
 
+# 1. 리스트 개수만큼 반복
 for i in range(len(k)): # i가 리스트의 index
     if k[i] == n:
         print(f'{i+1}번째 데이터입니다.')
@@ -23,3 +24,6 @@ for i in range(len(k)): # i가 리스트의 index
     elif k[i] < n:
         print('찾는 숫자가 없습니다.')
         break
+
+# 2. 리스트 함수 활용
+print(f'{k.index(n) + 1}번째 데이터입니다.')
