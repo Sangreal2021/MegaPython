@@ -22,7 +22,7 @@ class LineCounter:
 
     # 파일 종류별 라인 수를 계산하는 메서드입니다.
     def count_lines_by_file_type(self):
-        # 파일 유형별 라인 수를 저장할 딕셔너리를 defaultdict로 생성합니다. 기본값은 0입니다.
+        # 파일 유형별 라인 수를 저장할 딕셔너리를 defaultdict 으로 생성합니다. 기본값은 0입니다.
         line_count_by_type = defaultdict(int)
 
         # os.walk를 사용하여 주어진 디렉토리와 그 하위 디렉토리를 순회합니다.
