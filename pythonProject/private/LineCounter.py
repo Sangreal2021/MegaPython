@@ -5,9 +5,9 @@ from collections import defaultdict
 # LineCounter 클래스를 정의합니다.
 # 이 클래스는 주어진 디렉토리에서 파일을 탐색하고 각 파일 유형별 줄 수를 계산합니다.
 class LineCounter:
-    def __init__(self, src_directory):
-        # 생성자에서는 소스 디렉토리의 경로, 제외할 폴더, 제외할 파일 확장자 목록을 초기화합니다.
-        self.src_directory = src_directory
+    def __init__(self):
+        # 소스 디렉토리의 경로, 제외할 폴더, 제외할 파일 확장자 목록을 직접 초기화합니다.
+        self.src_directory = "D:\\private\\study\\SQLD"
         self.exclude_folders = [".idea", ".venv", ".git", "etc"]
         self.exclude_file_extensions = [".pdf", ".jpg", ".png"]
 
@@ -57,17 +57,16 @@ class LineCounter:
 
 # 메인 코드 블록입니다.
 if __name__ == "__main__":
-    # 소스 디렉토리 경로를 설정합니다.
-    src_directory = "D:\\private\\study\\SQLD"
     # LineCounter 인스턴스를 생성합니다.
-    counter = LineCounter(src_directory)
+    counter = LineCounter()
+
     # countLinesByFileType 메서드를 호출하여 파일 종류별 라인 수를 계산합니다.
     lines_by_file_type = counter.count_lines_by_file_type()
 
     # 계산된 결과를 출력합니다.
     for file_type, lines in lines_by_file_type.items():
-        print(f"{file_type} files total lines: {lines}")
+        print(f"{file_type} files total lines : {lines}")
 
     # 전체 라인 수를 계산하고 출력합니다.
     total_lines = sum(lines_by_file_type.values())
-    print(f"Total lines in '{src_directory}' directory: {total_lines}")
+    print(f"Total lines in '{counter.src_directory}' directory : {total_lines}")
