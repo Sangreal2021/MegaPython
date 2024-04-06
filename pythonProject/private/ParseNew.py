@@ -1,5 +1,11 @@
+#!/usr/bin/env python3
 import os
+import io
+import sys
 from pathlib import Path
+
+# 표준 출력 인코딩을 UTF-8로 설정
+sys.stdout = io.TextIOWrapper(sys.stdout.detach(), encoding='utf-8')
 
 
 class ParseNew:
@@ -89,20 +95,23 @@ class ParseNew:
 
             if "WELCOME" in line:
                 parts = line.split()
-                rec_time_start = parts[1]  # 시작 시간 추출
+                rec_time_start = parts[1].strip()  # 시작 시간 추출 및 양 끝 공백 제거
                 info_parts = line.split(" i=")[1].split(",")
-                rec_info = info_parts[0].strip()  # REC_INFO 추출
-                rec_key, _, rec_tel, rec_code = rec_info.split("_")
+                rec_info = info_parts[0].strip()  # REC_INFO 추출 및 양 끝 공백 제거
+                parts = rec_info.split("_")
+                rec_key = parts[0].strip()  # REC_KEY 추출 및 양 끝 공백 제거
+                rec_tel = parts[2].strip()  # REC_TEL 추출 및 양 끝 공백 제거
+                rec_code = parts[3].strip()  # REC_CODE 추출 및 양 끝 공백 제거
 
             if " c=" in line and "WELCOME" not in line and "ENDING" not in line:
-                stt_txt = line.split(" c=")[1]
+                stt_txt = line.split(" c=")[1].strip()  # STT_TXT 추출 및 양 끝 공백 제거
 
             if "send_dlg_update" in line:
-                stt_code = line.split("send_dlg_update")[1].split(",")[1].strip()
+                stt_code = line.split("send_dlg_update")[1].split(",")[1].strip()  # STT_CODE 추출 및 양 끝 공백 제거
 
             if "ENDING" in line:
                 parts = line.split()
-                rec_time_end = parts[1]  # 종료 시간 정보
+                rec_time_end = parts[1].strip()  # 종료 시간 정보 및 양 끝 공백 제거
 
         ch = f"[{ch:02}]"  # CH 자리수 2자리로 통일하기
 
