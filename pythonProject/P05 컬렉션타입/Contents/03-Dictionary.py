@@ -39,3 +39,40 @@ del a['hobby']  # 해당 key와 value가 함께 삭제
 print(a)
 del c[4]
 print(c)
+print('=' * 40)
+
+# == 딕셔너리 key, value 가져오기 == #
+# key 값만 가져오기
+print(a.keys())
+print(b.keys())
+print(list(a.keys()))   # key값들을 List로 반환
+
+# value 값만 가져오기
+print(a.values())
+print(list(a.values()))
+
+# key, value 쌍으로 가져오기
+print(a.items())
+print(list(a.items()))
+
+# 딕셔너리 key 중복일 때 => 뒤의 데이터로 덮어 씌워짐
+f = {'a':1, 'a': 2}
+print(f)
+
+g = {'a':1, 'b':1}
+print(g)
+
+# 딕셔너리에 없는 key를 찾을 때
+print(g['a'], g.get('a'))
+# print(g['c'])     # 에러
+print(g.get('c'))   # None 반환
+
+
+
+
+
+
+
+
+
+

@@ -122,11 +122,11 @@ print(alp.index('c'))
 # 오름차순 정렬
 nums.sort()
 print(nums)
-alp.sort()
+alp.sort()  # ASC
 print(alp)
 
 # 내림차순 정렬
-nums.sort(reverse=True)
+nums.sort(reverse=True) # DESC
 print(nums)
 alp.sort(reverse=True)
 print(alp)
