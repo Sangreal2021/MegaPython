@@ -123,7 +123,9 @@ class ParseNew:
             return ""
 
     def create_text_log(self, lines):
-        return_str = ""
+        # 열 제목 추가
+        column_titles = "채널\t시작시간\t종료시간\t전화번호\tSTT_CD\tREC_CD\tSTT결과\t\tREC_KEY\t파일명"
+        return_str = column_titles + "\n"  # 첫 줄에 열 제목을 추가하고, 다음 줄로 넘어갑니다.
         for i, line in enumerate(lines):
             if self.check_welcome(line):
                 ch_num = self.get_text_ch(line)
