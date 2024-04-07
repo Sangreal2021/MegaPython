@@ -11,14 +11,19 @@ sys.stdout = io.TextIOWrapper(sys.stdout.detach(), encoding='utf-8')
 class ParseNew:
     # 클래스 변수로 경로와 로그 파일명을 정의합니다.
     workspace_path = "D:\\etc\\plainjava\\unix"
+    destspace_path = "D:\\etc\\plainjava\\unix\\dest"
     log_file_name = "vsttrest2_2023-04-21"
 
     def exec_run(self):
         # os.path.join을 사용하여 파일 경로를 구성합니다. 이 방식은 운영체제에 독립적입니다.
-        file_path = os.path.join(self.workspace_path, f"report.{self.log_file_name}.txt")
+        dest_file_path = os.path.join(self.destspace_path, f"report.{self.log_file_name}.txt")
+
+        # dest 폴더가 없으면 생성
+        if not os.path.exists(self.destspace_path):
+            os.makedirs(self.destspace_path)
 
         # os.path.exists로 파일 존재 여부를 확인합니다.
-        if os.path.exists(file_path):
+        if os.path.exists(dest_file_path):
             print(f"Error: File <report.{self.log_file_name}.txt> already exists. Execution stopped.")
             return
 
@@ -30,7 +35,7 @@ class ParseNew:
         self.line_print(f"report.{self.log_file_name}", print_str)
 
     def line_print(self, category, output_str):
-        file_path = os.path.join(self.workspace_path, f"{category}.txt")
+        file_path = os.path.join(self.destspace_path, f"{category}.txt")
         if os.path.exists(file_path):
             return
 
