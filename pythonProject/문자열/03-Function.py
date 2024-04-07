@@ -31,6 +31,22 @@ print('문자열 바꾸기:', next_w)
 
 s2 = s.replace('*', '') # 문자열에서 특정 문자 제거
 print('별표 제거:', s2)
+print('='*45)
+
+
+# 문자열 나누기
+k = 'Summer is coming'
+print('문자열 나누기:', k.split())    # default 기준은 \s
+a = k.split()
+print(a[0], type(a), len(a))
+
+date = '2024-04-07'
+print('날짜를 기호 기준으로 나누기:', date.split('-'))
+print('연도:', date.split('-')[0])
+
+phone = '010-1234-5678'
+print('핸드폰 번호 뒷자리:', phone.split('-')[-1])  # -1(뒤에서 첫번째) or 2(앞에서 3번째)
+
 
 
 

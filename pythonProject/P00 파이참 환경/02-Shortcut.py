@@ -14,6 +14,9 @@
     (2) 영역 잘라내기/복사/붙여너허기 : ctrl + X/C/V
     (3) 전체 선택 : ctrl + A
     (4) 단어 찾기 : ctrl + F (ctrl + shift + F 는 프로젝트에서 찾기)
+    (5) 한줄 맨앞뒤 이동 : home, end
+    (6) 단어 단위 이동 : ctrl + 왼쪽/오른쪽
+    (7) 단어 단위 삭제 : ctrl + delete/backspace
 '''
 print('asdasd')
 print(32123)
