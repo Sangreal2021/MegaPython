@@ -14,9 +14,9 @@ audio_quality 설정 - 오디오 품질 (비트레이트 kbps)
 '''
 
 # 사용자 설정 부분
-file_title = "さくらんぼ(Original)"
+file_title = "Overworld_Theme-SuperMarioWorld"
+download_url = 'https://www.youtube.com/watch?v=tAaGKo4XVvM'
 file_ext = "mp3"
-download_url = 'https://www.youtube.com/watch?v=uQFBQu-huD0'
 download_path = r'E:\Music\Youtube'
 audio_quality = '192'
 
