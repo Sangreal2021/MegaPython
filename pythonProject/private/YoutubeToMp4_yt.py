@@ -1,17 +1,16 @@
-
 '''
-※ pytube 설치
+1. pytube 설치
     pip install pytube
-해상도 종류
-144p
-240p
-360p
-480p
-720p (HD)
-1080p (Full HD)
-1440p (2K)
-2160p (4K)
-4320p (8K)
+2. 해상도 종류
+    144p
+    240p
+    360p
+    480p
+    720p (HD)
+    1080p (Full HD)
+    1440p (2K)
+    2160p (4K)
+    4320p (8K)
 '''
 
 import yt_dlp
