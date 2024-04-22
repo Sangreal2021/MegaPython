@@ -17,9 +17,9 @@ from pytube import YouTube
 import os
 
 # 설정 가능한 변수들
-video_url = 'https://www.youtube.com/watch?v=11cta61wi0g'
+video_url = 'https://www.youtube.com/watch?v=js1CtxSY38I'
 download_folder = r'D:\Movie\Youtube'
-filename = 'HypeBoy - NewJeans.mp4'  # '.mp4' 확장자를 파일 이름에 포함
+filename = 'Attention_Official MV - NewJeans.mp4'  # '.mp4' 확장자를 파일 이름에 포함
 resolution = '1080p'
 
 
