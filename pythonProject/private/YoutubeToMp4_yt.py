@@ -1,4 +1,4 @@
-import yt_dlp
+
 '''
 ※ pytube 설치
     pip install pytube
@@ -13,14 +13,22 @@ import yt_dlp
 2160p (4K)
 4320p (8K)
 '''
+
+import yt_dlp
+import os
+
 # 설정 가능한 변수들
-video_url = 'https://www.youtube.com/watch?v=11cta61wi0g'
+video_url = 'https://www.youtube.com/watch?v=gdZLi9oWNZg'
 download_folder = r'D:\Movie\Youtube'
-filename = 'Hype Boy.mp4'  # 파일 이름에 확장자 포함
+filename = 'Dynamite - BTS.mp4'  # 파일 이름에 확장자 포함
 resolution = '720p'  # 해상도 설정
 
 
 def download_video(url, folder, file_name, res):
+    # 다운로드 폴더가 존재하는지 확인하고, 없으면 생성
+    if not os.path.exists(folder):
+        os.makedirs(folder)
+
     ydl_opts = {
         'outtmpl': f'{folder}/{file_name}',
         'format': f'bestvideo[height<={res}][ext=mp4]+bestaudio[ext=m4a]/best[height<={res}]',

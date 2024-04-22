@@ -1,6 +1,3 @@
-import yt_dlp
-import os
-
 '''
 audio_quality 설정 - 오디오 품질 (비트레이트 kbps)
     32 kbps: 매우 낮은 품질, 음성 파일용
@@ -12,6 +9,9 @@ audio_quality 설정 - 오디오 품질 (비트레이트 kbps)
     256 kbps: 매우 높은 품질, 프로페셔널 오디오
     320 kbps: 최고 품질의 오디오 파일
 '''
+
+import yt_dlp
+import os
 
 # 사용자 설정 부분
 file_title = "Overworld_Theme-SuperMarioWorld"

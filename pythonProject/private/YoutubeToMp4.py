@@ -1,4 +1,3 @@
-from pytube import YouTube
 '''
 ※ pytube 설치
     pip install pytube
@@ -13,14 +12,22 @@ from pytube import YouTube
 2160p (4K)
 4320p (8K)
 '''
+
+from pytube import YouTube
+import os
+
 # 설정 가능한 변수들
 video_url = 'https://www.youtube.com/watch?v=11cta61wi0g'
 download_folder = r'D:\Movie\Youtube'
-filename = 'Hype Boy.mp4'  # '.mp4' 확장자를 파일 이름에 포함
+filename = 'HypeBoy - NewJeans.mp4'  # '.mp4' 확장자를 파일 이름에 포함
 resolution = '1080p'
 
 
 def download_video(url, folder, file_name, res):
+    # 다운로드 폴더가 존재하는지 확인하고, 없으면 생성
+    if not os.path.exists(folder):
+        os.makedirs(folder)
+
     yt = YouTube(url)
     # 지정된 해상도로 MP4 파일 형식의 첫 번째 스트림 선택
     stream = yt.streams.filter(res=res, file_extension='mp4').first()
