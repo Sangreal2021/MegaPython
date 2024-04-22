@@ -1,5 +1,4 @@
 from pytube import YouTube
-
 '''
 ※ pytube 설치
     pip install pytube
@@ -14,7 +13,6 @@ from pytube import YouTube
 2160p (4K)
 4320p (8K)
 '''
-
 # 설정 가능한 변수들
 video_url = 'https://www.youtube.com/watch?v=11cta61wi0g'
 download_folder = r'D:\Movie\Youtube'
