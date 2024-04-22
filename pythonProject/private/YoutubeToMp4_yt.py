@@ -19,17 +19,20 @@ import os
 # 설정 가능한 변수들
 video_url = 'https://www.youtube.com/watch?v=gdZLi9oWNZg'
 download_folder = r'D:\Movie\Youtube'
-filename = 'Dynamite - BTS.mp4'  # 파일 이름에 확장자 포함
+filename = 'Dynamite - BTS'  # 확장자를 제외한 파일 이름
 resolution = '720p'  # 해상도 설정
 
 
 def download_video(url, folder, file_name, res):
+    # 파일 이름에 확장자 추가
+    file_name_with_ext = f'{file_name}.mp4'
+
     # 다운로드 폴더가 존재하는지 확인하고, 없으면 생성
     if not os.path.exists(folder):
         os.makedirs(folder)
 
     ydl_opts = {
-        'outtmpl': f'{folder}/{file_name}',
+        'outtmpl': f'{folder}/{file_name_with_ext}',
         'format': f'bestvideo[height<={res}][ext=mp4]+bestaudio[ext=m4a]/best[height<={res}]',
         'postprocessors': [{
             'key': 'FFmpegVideoConvertor',
