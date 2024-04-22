@@ -14,11 +14,11 @@ import yt_dlp
 import os
 
 # 사용자 설정 부분
-file_title = "Overworld_Theme-SuperMarioWorld"
-download_url = 'https://www.youtube.com/watch?v=tAaGKo4XVvM'
-file_ext = "mp3"
-download_path = r'E:\Music\Youtube'
-audio_quality = '192'
+download_url = 'https://www.youtube.com/watch?v=gdZLi9oWNZg'
+file_title = 'Dynamite - BTS'
+file_ext = 'mp3'
+download_path = r'D:\Music\Youtube'
+quality = '192'
 
 # 완성된 파일 경로 및 이름 설정
 # output_template = os.path.join(download_path, f'{file_title}.{file_ext}')
@@ -31,7 +31,7 @@ ydl_opts = {
     'postprocessors': [{
         'key': 'FFmpegExtractAudio',  # 비디오에서 오디오 추출
         'preferredcodec': file_ext,  # 오디오 파일 형식 (mp3)
-        'preferredquality': audio_quality,  # 오디오 품질 설정
+        'preferredquality': quality,  # 오디오 품질 설정
     }]
 }
 
