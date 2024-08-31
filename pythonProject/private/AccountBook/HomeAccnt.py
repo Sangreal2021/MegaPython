@@ -1,3 +1,9 @@
+'''
+1. xlwings 설치
+    pip install xlwings
+2.  
+'''
+
 import xlwings as xw
 import os
 import glob
